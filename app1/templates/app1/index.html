@@ -1,0 +1,91 @@
+{%load static%}
+
+<head>
+    <title>Eye Can See</title>
+    <link rel="stylesheet" href="{%static 'app1/landing.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body id="index-body">
+    <div id='body' class="index">
+
+        <div class="topnav" id="myTopnav">
+            <a href="/" class="active">Home</a>
+            <a href="#features">Features</a>
+            <a href="#add-relative">Add Relative</a>
+            <a href="recognize/">Recognize</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <h1 id="index-head1">Welcome <i>{{name}}</i></h1>
+        <!--         
+        <div class="index-image">
+            <img src="../../static/assets/images/people.jpg" />
+        </div> -->
+
+
+
+
+
+        <!-- <div class="flex left-div">
+                <img id="user-img" src="../../static/assets/images/bg.jpg" alt="dress" width="60%">
+
+            </div> -->
+
+        <div class="form-div">
+            <h2>ADD PERSON</h2>
+
+
+            <form method="POST" action="/user/" enctype="multipart/form-data" id="form" autocomplete="off">
+                {% csrf_token %}
+
+                {{form.as_p}}
+
+                <div class="form-button">
+                    <button id="button" type="submit">Submit</button>
+                </div>
+
+            </form>
+
+
+
+
+</body>
+
+<!-- Function for responsive navbar -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+
+
+
+<!-- <div class="grid-container" id = "add-relative">
+            <div class="c2">
+                <p>Add Person</p>
+                <img src = "../../static/assets/images/user.png"/>
+            </div>
+            <div class="c1">
+                <div id="form-div">
+                    <form method="POST" action="/user/" enctype="multipart/form-data" id="index-form">
+                        {% csrf_token %}
+
+                        {{form.as_p}}
+
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->

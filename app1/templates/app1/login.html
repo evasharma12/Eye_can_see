@@ -1,0 +1,89 @@
+{%load static%}
+
+<head>
+    <title>Eye Can See</title>
+    <link rel="stylesheet" href="{%static 'app1/landing.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="body">
+
+
+        <div class="topnav">
+            <a class="active" href="">
+                <p id = "logo">Eye Can See</p>
+            </a>
+
+        </div>
+
+
+        <div class="grid-container login-grid">
+            <div class="c1">
+                <h1>Making the World a Better Place - <i>Visually</i></h1>
+                <p>This application helps visually impaired people get to know whom they are talking to with the help of
+                    face
+                    recognition. We use face_recognition and OpenCV packages.</p>
+                <form method="POST" action="/" autocomplete="off">
+                    {% csrf_token %}
+
+                    <input type="text" id="username" name="username" placeholder="Enter your name"></input>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="c2">
+                <img src="../../static/assets/images/eye.png" />
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="grid-container">
+            <div class = "grid1">
+                <div class="feature" id="feature1">
+                    <p>#Security</p>
+                    <div class="grid-container2">
+
+                        <img src="../../static/assets/images/eye.png" />
+
+                        <div>
+                            <h4>Now have a Criminal Proof Entrance with <i>Eye Can See</i></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature" id="feature2">
+                    <p>#Add known</p>
+                    <div class="grid-container2">
+
+
+                        <img src="../../static/assets/images/user.png" />
+
+
+                        <div>
+                            <h4>Add your acquintances to the database</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class = "grid1">
+                <div class="feature" id="feature3">
+                    <p>#Beware of Frauds</p>
+                    <div>
+                        <img src="../../static/assets/images/security.png" />
+                        <h4>Only let knows enter your security system and beware of frauds</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    
+
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2022 Eye Can See</p>
+    </div>
+
+</body>
