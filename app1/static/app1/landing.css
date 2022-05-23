@@ -76,6 +76,29 @@ body {
     color: var(--darkgrey);
 }
 
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+
+    background-color: var(--notWhite);
+    color: var(--darkgrey);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+
 /*------------------------------------------------------*/
 
 
@@ -415,7 +438,12 @@ ul {
 
 
 
+@media screen and (max-width: 1300px){
 
+    .form-div {
+        width: 60%;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .grid-container {
@@ -444,7 +472,7 @@ ul {
     .topnav a.icon {
         float: right;
         display: block;
-        background-color: var(--pink);
+        background-color: var(--grey);
         border-radius: 15px;
         margin-top: 3%;
         margin-right: 3%;
@@ -465,10 +493,29 @@ ul {
         display: block;
         text-align: left;
     }
+    #form p{
+        text-align: center;
+        justify-content: center;
+    }
+    #form p label{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 3%;
+    }
+
+    #form p input{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
 
     .form-div {
-        width: 80%;
+        width: 100%;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {
@@ -479,5 +526,6 @@ ul {
     .c1 p {
         font-size: 0.9rem;
     }
+
 
 }
