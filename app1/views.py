@@ -85,7 +85,7 @@ def recognize(request):
         # Encode faces from a folder
         sfr = SimpleFacerec()
         sfr.load_encoding_images(
-            "/home/eva/Desktop/eva_engage/face_rec/media/images", user_recognizing)
+           "../media/images", user_recognizing)
 
         # Load Camera
         cap = cv2.VideoCapture(0)
