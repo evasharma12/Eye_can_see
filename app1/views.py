@@ -88,7 +88,7 @@ def recognize(request):
            "../media/images", user_recognizing)
 
         # Load Camera
-        cap = cv2.VideoCapture(0)
+        cap = cv2.VideoCapture(-1)
 
         while True:
             # Get the frame
