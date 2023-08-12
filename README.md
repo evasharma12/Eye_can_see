@@ -10,6 +10,8 @@ A web application built on the first theme of Microsoft Engage 2022, i.e. Face R
 It is a face detection application which is used to strengthen security systems at entrances.
 Whenever someone knocks at your door, this application will recognize if the person is known to you. 
 
+## [Video Demo](https://drive.google.com/file/d/15eKbkzAKjnTQ4lCSArzMdtIg8ZH6ScFE/view?usp=sharing)
+
 ### Technologies Used
 -   Open CV - for detecting faces
 -   Face recognition - for recognizing faces from the database
